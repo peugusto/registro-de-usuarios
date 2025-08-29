@@ -1,0 +1,48 @@
+.backGround{
+  width: 40rem;
+  height: 40rem;
+  background-color: #696969; 
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backGround form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(255, 255, 255);
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;;
+  gap: 10px;
+  height: 90%;
+}
+.backGround input{
+  background-color: rgb(255, 255, 255);
+  width: 20rem;
+  height: 2rem;
+  border: 0.5px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 20px;
+}
+fieldset{
+  border: none;
+
+}
+.backGround button{
+  background-color: #696969;
+  border-radius: 12px;
+  padding: 20px;
+  border: none;
+  color:white;
+  font-weight: 700;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
