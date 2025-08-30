@@ -1,9 +1,9 @@
 export default function validate(req,res,next){
-    const { firstname, lastname, phone, email } = req.body;
+    const { firstname, lastname} = req.body;
     
-    if(!firstname.trim() || !lastname.trim() || !phone.trim() || !email.trim()){
-        res.status(400)
+    if(!firstname?.trim() || !lastname?.trim()){
         console.error('Todos os campos precisam estar preenchidos.')
+        return res.status(400).json({ error: 'Todos os campos precisam estar preenchidos.' });
     }
 
     
