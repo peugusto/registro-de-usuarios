@@ -10,7 +10,12 @@ export default class User {
 
   async save() {
     await db.execute('INSERT INTO user (firstname,lastname,phone,email) values(?,?,?,?)',
-      [this.firstname,this.lastname,this.phone,this.email]
+      [
+       this.firstname,
+       this.lastname,
+       this.phone?.trim() ? this.phone : null, 
+       this.email?.trim() ? this.email : null
+      ]
     )
     console.log('Usuario salvo no banco de dados!')
   }
